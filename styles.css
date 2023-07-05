@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #4a55a2;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    width: 1000px;
+    padding: 100px;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-weight: 700;
+    color: #C5DFF8;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.calculator .calendar {
+    background-color: rgba(120, 149, 203, .3);
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+input[type="date"] {
+    background-color: #FFFFFF;
+    padding: 15px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 250px;
+}
+.calculator .calendar button {
+    padding: 15px 50px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 220px;
+    background-color: #C5DFF8;
+    color: #4A55A2;
+}
+.calculator .age-output {
+    margin-top: 20px;
+    color: #FFFFFF;
+
+}
+.calculator .age-output.active {
+    visibility: visible;
+}
+.age-output span {
+    font-weight: 700;
+    color: #A0BFE0;
+    text-decoration: underline;
+}
